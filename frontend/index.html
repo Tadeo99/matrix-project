@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafío Matriz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    textarea {
+      width: 100%;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    h2, h3, h4 {
+      color: #0056b3;
+    }
+    pre {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    td {
+      padding: 6px 12px;
+      border: 1px solid #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ingrese una matriz (usar comas y saltos de línea):</h2>
+  <textarea id="matrixInput" rows="6" placeholder="Ejemplo:\n1,2\n3,4"></textarea><br>
+  <button onclick="enviar()">Enviar</button>
+
+  <h3>Resultados QR:</h3>
+  <div id="resultado"></div>
+
+  <h3>Estadísticas:</h3>
+  <pre id="resultado2"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
